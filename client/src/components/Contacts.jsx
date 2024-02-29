@@ -55,6 +55,8 @@ const Contacts = () => {
 
     const {data, isLoading, isError} = useQuery("contact", getAllData);
 
+    console.log(data)
+
     const navigate = useNavigate();
     return (
         <div className="w-[80%] mx-auto my=[3rem] border-2 border-blue-100 shadow-md shadow-gray-400 rounded-lg">
